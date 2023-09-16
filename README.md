@@ -94,7 +94,12 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* 1:
+  * How to validate:
+* 2:
+  * How to validate:
+* 3:
+  * How to validate:
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -102,7 +107,13 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+* We want ML model to predict
+* Our ideal outcome is to
+* The model succsess metrics are:
+  * A
+* The model output is
+* Heuristics:
+* The training data
 
 
 ## Dashboard Design
