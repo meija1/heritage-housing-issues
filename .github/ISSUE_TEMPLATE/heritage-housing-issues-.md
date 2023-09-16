@@ -1,7 +1,7 @@
 ---
-name: ''
+name: 'Heritage housing issues '
 about: Describe this issue template's purpose here.
-title: 'USER STORY: <Title>''USER STORY: <Title>'
+title: 'USER STORY: <TITLE>'
 labels: ''
 assignees: ''
 
