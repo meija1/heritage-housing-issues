@@ -7,4 +7,4 @@ def predict_house_price(X_live, house_features, house_price_pipeline):
 
     house_price_prediction = house_price_pipeline.predict(X_live_house_price)
     
-    st.write(f"The predicted house price is: {house_price_prediction}")
+    st.write(f"The predicted house price is: {house_price_prediction.round(1)}")
