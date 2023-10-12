@@ -45,17 +45,21 @@ def DrawInputsWidgets():
 
     with col1:
         feature = "OverallQual"
-        st_widget = st.selectbox(
+        st_widget = st.number_input(
             label=feature,
-            options=df[feature].unique()
+            min_value=1,
+            max_value=10,
+            value=int(df[feature].median())
         )
     X_live[feature] = st_widget
 
     with col2:
         feature = "TotalBsmtSF"
-        st_widget = st.selectbox(
+        st_widget = st.number_input(
             label=feature,
-            options=df[feature].unique()
+            min_value=int(df[feature].min()*percentageMin),
+            max_value=int(df[feature].max()*percentageMax),
+            value=int(df[feature].median())
         )
     X_live[feature] = st_widget
 
@@ -63,17 +67,20 @@ def DrawInputsWidgets():
         feature = "GarageArea"
         st_widget = st.number_input(
             label=feature,
-            min_value=df[feature].min()*percentageMin,
-            max_value=df[feature].max()*percentageMax,
-            value=df[feature].median()
+            min_value=int(df[feature].min()*percentageMin),
+            max_value=int(df[feature].max()*percentageMax),
+            value=int(df[feature].median())
         )
     X_live[feature] = st_widget
 
     with col4:
         feature = "2ndFlrSF"
-        st_widget = st.selectbox(
+        st_widget = st.number_input(
             label=feature,
-            options=df[feature].unique()
+            min_value=int(df[feature].min()*percentageMin),
+            max_value=int(df[feature].max()*percentageMax),
+            value=int(df[feature].median())
+
         )
     X_live[feature] = st_widget
 
