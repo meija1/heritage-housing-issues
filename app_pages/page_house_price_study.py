@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style("darkgrid")
 
+
 def page_house_price_study():
-    
+
     df = load_house_price_records()
 
     vars_to_study = ['1stFlrSF', 'GarageArea',
                      'GarageYrBlt', 'GrLivArea', 'OverallQual',
                      'TotalBsmtSF', 'YearBuilt']
-
 
     st.write("### House Price Study")
     st.info(
@@ -37,6 +37,11 @@ def page_house_price_study():
         f"the variables are correlated to Sale Price. \n"
         f"The model gave us the most correlated variables, which are:")
     st.subheader(vars_to_study)
+
+    st.write("The Pearson and Spearman correlation measures the strength and direction \n"
+             f"of the relationship between variables. \n"
+             f"Pearson correlation assesses linear relationships, while Spearman \n"
+             f"correlation evaluates monotonic relationships")
 
     df_eda = df.filter(vars_to_study + ['SalePrice'])
 
@@ -63,7 +68,7 @@ def page_house_price_study():
     if st.checkbox("Sale Price Analysis"):
         sale_level_per_variable(df_eda)
 
-    
+
 def sale_level_per_variable(df_eda):
     target_var = 'SalePrice'
 
@@ -106,4 +111,3 @@ def pearson_analysis(df):
     axes = plt.bar(x=corr_pearson[:7].index, height=corr_pearson, width=0.5)
     plt.title("Pearson Analysis", fontsize=10, y=1.05)
     st.pyplot(fig)
-
