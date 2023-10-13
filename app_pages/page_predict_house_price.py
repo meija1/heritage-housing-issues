@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from src.data_management import (
-    load_pkl_file, load_house_price_records, load_inherited_house__records)
+    load_pkl_file, load_house_price_records, load_inherited_house_records)
 from src.machine_learning.predictive_analysis_ui import predict_house_price
 
 
@@ -17,8 +17,7 @@ def page_predict_house_price():
     st.write("### Predict House Price Interface")
     st.info(
         f"The client is interested in house price predictions on Ames, Iowa \n\n"
-        f"Also the client is interested in seeing correlated variables against the sale price \n\n"
-        f"As well as predicting the house sale price from her four inherited houses")
+        f"Also the client is interested in seeing correlated variables against the sale price \n\n")
 
     st.write("---")
 
@@ -29,7 +28,7 @@ def page_predict_house_price():
             X_live, sale_features, clf_pipeline_model)
 
         if house_price_prediction == 1:
-            predict_tenure(X_live, sale_features,
+            predict_price(X_live, sale_features,
                            clf_pipeline_model)
 
 

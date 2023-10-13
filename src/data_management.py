@@ -12,7 +12,7 @@ def load_house_price_records():
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
-def load_inherited_house__records():
+def load_inherited_house_records():
     df = pd.read_csv(
         "inputs/datasets/raw/house-price-20211124T154130Z-001/house-price/inherited_houses.csv")
     return df
