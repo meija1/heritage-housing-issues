@@ -4,7 +4,7 @@ import pandas as pd
 
 def page_summary():
 
-    st.write("Project Summary")
+    st.write("### Project Summary")
 
     st.info(
         f"The objective of this project is to help the custumoer \n"
