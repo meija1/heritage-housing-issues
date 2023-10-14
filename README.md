@@ -1,54 +1,20 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Codeanywhere Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In your Cloud IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+# House Sale Price Predictor
+This project aims to predict house prices in Aimes / Iowa and sale price for clients inherited houses using machine learning and data analysis.The main goal for this project is to help customer understand what house features correlates to house sale price and aid machine learning in making accurate predictions. The machine learning models used in this project are trained and tested on the dataset found in kaggle.com.
+![responsive](https://github.com/meija1/heritage-housing-issues/assets/109754892/55a93126-8e9d-44bb-aa08-acd21c7b0d32)
+## Table of Contents
+* [Dataset Content](#dataset-content)
+* [Business Requirements](#business-requirements)
+* [Hypothesis and validation](#hypothesis-and-validation)
+* [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+* [ML Business Case](#ml-business-case)
+* [Dashboard Design](#dashboard-design)
+* [Unfixed Bugs](#unfixed-bugs)
+* [Deployment](#deployment)
+* [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+* [Credits](#credits)
+* [Content](#content)
+* [Media](#media)
+* [Acknowledgements](#acknowledgements)
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
@@ -82,8 +48,6 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 
 
-
-
 ## Business Requirements
 As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
@@ -93,7 +57,7 @@ Although your friend has an excellent understanding of property prices in her ow
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 
-## Hypothesis and how to validate?
+## Hypothesis and validation
 * 1:
   * How to validate:
 * 2:
@@ -128,7 +92,7 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: [House Price Predictor App](https://house-price-predict-1ae8b9e93921.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -161,6 +125,6 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 
-## Acknowledgements (optional)
+## Acknowledgements
 * In case you would like to thank the people that provided support through this project.
 
