@@ -24,7 +24,8 @@ def regression_report(X, y, pipeline):
     st.write('#### R2 Score')
     st.code(r2_score(y, prediction))
 
-def regression_plot(X_train, y_train, prediction):
+
+def regression_plot(X_train, y_train, pipeline, prediction):
     
     prediction = pipeline.predict(X_train)
 

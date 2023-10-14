@@ -17,5 +17,6 @@ def load_inherited_house_records():
         "inputs/datasets/raw/house-price-20211124T154130Z-001/house-price/inherited_houses.csv")
     return df
 
+
 def load_pkl_file(file_path):
     return joblib.load(filename=file_path)
