@@ -5,10 +5,10 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 def regression_performance(X_train, y_train, X_test, y_test, pipeline):
     st.info("Train Set")
-    confusion_matrix_and_report(X_train, y_train, pipeline)
+    regression_report(X_train, y_train, pipeline)
 
     st.info("Test Set")
-    confusion_matrix_and_report(X_test, y_test, pipeline)
+    regression_report(X_test, y_test, pipeline)
 
 
 def regression_report(X, y, pipeline):
@@ -23,10 +23,3 @@ def regression_report(X, y, pipeline):
 
     st.write('#### R2 Score')
     st.code(r2_score(y, prediction))
-
-
-def regression_plot(X_train, y_train, pipeline, prediction):
-    
-    prediction = pipeline.predict(X_train)
-
-    st.code(sns.scatterplot(x=prediction, y=y_train, alpha=0.5))

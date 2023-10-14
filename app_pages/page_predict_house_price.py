@@ -27,10 +27,6 @@ def page_predict_house_price():
         house_price_prediction = predict_house_price(
             X_live, sale_features, clf_pipeline_model)
 
-        if house_price_prediction == 1:
-            predict_price(X_live, sale_features,
-                           clf_pipeline_model)
-
 
 def DrawInputsWidgets():
 
