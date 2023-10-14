@@ -16,7 +16,7 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 * [Media](#media)
 * [Acknowledgements](#acknowledgements)
 ## Dataset Content
-* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
+* The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
@@ -49,25 +49,30 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 
 
 ## Business Requirements
-As a good friend, you are requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+A client who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, has requested to  help in maximising the sales price for the inherited properties.
 
-Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+Although client has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 
 ## Hypothesis and validation
-* 1:
-  * How to validate:
-* 2:
-  * How to validate:
-* 3:
-  * How to validate:
+* 1: Sale Price for a house strongly correlates with the houses overall quality, meaning it could be the physical condition and/or social and physical environment.
+  * How to validate: Data showed if the houses quality rating is higher, the house price is often high.
+* 2: Ground living area square feet, Garage area, Total square feet of basement area are strong indicators for machine learning model that these features increase the sale price of the house.
+  * How to validate: Our correlation study confirms that these features are one of the highest in correlation with the sale price.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+Business 1
+1 Data collection
+2 Data cleaning
+3 Data Study
+Business 2
+4 Data Feature/Engineering
+5 Applying model
+6 Dashboard deployment
 
 
 ## ML Business Case
