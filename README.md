@@ -65,24 +65,23 @@ Although client has an excellent understanding of property prices in her own sta
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-Business 1
-1 Data collection
-2 Data cleaning
-3 Data Study
-Business 2
-4 Data Feature/Engineering
-5 Applying model
-6 Dashboard deployment
-
+Business requirement 1:
+* Collect data and inspect the data from kaggle.
+* Study data using spearman and pearson methods to find correlation between the data.
+* Visualize the data to understand the correlation.
+Business requirement 2:
+* Perform data cleaning to improve machine learning performance.
+* Apply categorical or numerical encoders to transform the data.
+* Find the best regressor model with best parameters to predict house sale price.
+* Create a dashboard for client to visualize data and have an interface to predict house price
 
 ## ML Business Case
-* We want ML model to predict
-* Our ideal outcome is to
+* We want ML model to predict sale price of a house and be able to visualize the data on a user friendly dashboard.
+* Our ideal outcome is for the machine learning model to be able to predict house prices and clieants inherited property value as accurate as possible
 * The model succsess metrics are:
-  * A
-* The model output is
-* Heuristics:
-* The training data
+  * At least a 0.7 R2 score on train and test set
+* The model output is 0.8 on the R2 score that gives us a predictive value in dollaras of a house in Ames, Iowa.
+* The training data was collected from public dataset on kaggle, it consists of nearly 1500 house records and their features.
 
 
 ## Dashboard Design
