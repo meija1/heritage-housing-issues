@@ -4,6 +4,7 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 ## Table of Contents
 * [Dataset Content](#dataset-content)
 * [Business Requirements](#business-requirements)
+* [CRISP-DM](#crisp-dm)
 * [Hypothesis and validation](#hypothesis-and-validation)
 * [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 * [ML Business Case](#ml-business-case)
@@ -12,8 +13,6 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 * [Deployment](#deployment)
 * [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 * [Credits](#credits)
-* [Content](#content)
-* [Media](#media)
 * [Acknowledgements](#acknowledgements)
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
@@ -51,11 +50,25 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 ## Business Requirements
 A client who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, has requested to  help in maximising the sales price for the inherited properties.
 
-Although client has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+Although client has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and has provided data for that.
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
+## CRISP-DM
+Cross-industry standard process for data mining followed the base process:
+
+1 - Buisness Understanding - Understanding the clients goals and what expectations from the model.
+
+2 - Data Understanding - How the data works and meaning behind the variables.
+
+3 - Data Preparation - Process the data using data cleaning and importing features to prepare the data for modeling.
+
+4 - Modeling - Model the data for business needs using algorithms and spliting data into train and test sets.
+
+5 - Evaluation - Evaluate the model if it meets the business standarts and evaluate it's performance. If it doesn't meet the requirements, start from step 1.
+
+6 - Deployment - Deploy a finished project and app if the client is happy with the model.
 
 ## Hypothesis and validation
 * 1: Sale Price for a house strongly correlates with the houses overall quality, meaning it could be the physical condition and/or social and physical environment.
@@ -74,6 +87,12 @@ Business requirement 2:
 * Apply categorical or numerical encoders to transform the data.
 * Find the best regressor model with best parameters to predict house sale price.
 * Create a dashboard for client to visualize data and have an interface to predict house price
+User Stories:
+* As a user I can view variable features so that it's understood which correlates to the house sale price.
+* As a user I can view project summary so that it's understood what and how the project works.
+* As a user I can view project hypothesis so that I see if data has been validated.
+* As a user I can select 4 house attribute so that I can view predicted price for all 4 inherited houses.
+* As a user I can view model performance so that its known of how the model works and it's accuracy.
 
 ## ML Business Case
 * We want ML model to predict sale price of a house and be able to visualize the data on a user friendly dashboard.
@@ -131,10 +150,9 @@ No bugs recorded to my knowledge
 
 ## Credits 
 ### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The project was heavily helped by Walkthrough Project 2-Churnometer by Code Institute, with their custom functions and features for the model and dashboard. [Churnometer](https://github.com/Code-Institute-Solutions/churnometer)
+- A lot of common errors was fixed with the help of [Slack](https://app.slack.com/)
+- Most errors and bugs were fixed by finding similar problems on [StackOverflow](https://stackoverflow.com/)
 
 ### Media
 No media used in this project
