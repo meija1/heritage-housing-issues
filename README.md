@@ -1,5 +1,5 @@
 # House Sale Price Predictor
-This project aims to predict house prices in Aimes / Iowa and sale price for clients inherited houses using machine learning and data analysis.The main goal for this project is to help customer understand what house features correlates to house sale price and aid machine learning in making accurate predictions. The machine learning models used in this project are trained and tested on the dataset found in kaggle.com.
+This project aims to predict house prices in Aimes, Iowa and the sale prices for the clients four inherited houses using machine learning and data analysis. The main goal for this project is to help customers understand which house features correlate to house sale price and aid machine learning in making accurate predictions. The machine learning models used in this project are trained and tested on the dataset found in kaggle.com.
 ![responsive](https://github.com/meija1/heritage-housing-issues/assets/109754892/55a93126-8e9d-44bb-aa08-acd21c7b0d32)
 ## Table of Contents
 * [Dataset Content](#dataset-content)
@@ -16,7 +16,7 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 * [Acknowledgements](#acknowledgements)
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data).
-* The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
+* The dataset has almost 1500 rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
 |Variable|Meaning|Units|
 |:----|:----|:----|
@@ -50,30 +50,30 @@ This project aims to predict house prices in Aimes / Iowa and sale price for cli
 ## Business Requirements
 A client who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, has requested to  help in maximising the sales price for the inherited properties.
 
-Although client has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and has provided data for that.
+Although the client has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and has provided data for that.
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
-* 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+* 2 - The client is interested in predicting the house sale price for her four inherited houses and any other house in Ames, Iowa.
 
 ## CRISP-DM
 Cross-industry standard process for data mining followed the base process:
 
-1 - Buisness Understanding - Understanding the clients goals and what expectations from the model.
+1 - Buisness Understanding - Understanding the client's goals and expectations from the model.
 
-2 - Data Understanding - How the data works and meaning behind the variables.
+2 - Data Understanding - How the data works and the meaning behind the variables.
 
 3 - Data Preparation - Process the data using data cleaning and importing features to prepare the data for modeling.
 
 4 - Modeling - Model the data for business needs using algorithms and spliting data into train and test sets.
 
-5 - Evaluation - Evaluate the model if it meets the business standarts and evaluate it's performance. If it doesn't meet the requirements, start from step 1.
+5 - Evaluation - Evaluate if the model meets the business standards and evaluate its performance. If it doesn't meet the requirements, start from step 1.
 
 6 - Deployment - Deploy a finished project and app if the client is happy with the model.
 
-## Hypothesis and validation
-* 1: Sale Price for a house strongly correlates with the houses overall quality, meaning it could be the physical condition and/or social and physical environment.
+## Hypothesis and Validation
+* 1: Sale Price for a house strongly correlates with the property's overall quality, meaning it could be the physical condition and/or social and physical environment.
   * How to validate: Data showed if the houses quality rating is higher, the house price is often high.
-* 2: Ground living area square feet, Garage area, Total square feet of basement area are strong indicators for machine learning model that these features increase the sale price of the house.
+* 2: Ground living area square feet, Garage area and Total square feet of basement area are strong indicators for machine learning model that these features increase the sale price of the house.
   * How to validate: Our correlation study confirms that these features are one of the highest in correlation with the sale price.
 
 
@@ -81,12 +81,13 @@ Cross-industry standard process for data mining followed the base process:
 Business requirement 1:
 * Collect data and inspect the data from kaggle.
 * Study data using spearman and pearson methods to find correlation between the data.
-* Visualize the data to understand the correlation.
+* Visualise the data to understand the correlation.
+
 Business requirement 2:
 * Perform data cleaning to improve machine learning performance.
 * Apply categorical or numerical encoders to transform the data.
-* Find the best regressor model with best parameters to predict house sale price.
-* Create a dashboard for client to visualize data and have an interface to predict house price
+* Find the best regressor model with the best parameters to predict house sale price.
+* Create a dashboard for client to visualise data and have an interface to predict house price
 User Stories:
 * As a user I can view variable features so that it's understood which correlates to the house sale price.
 * As a user I can view project summary so that it's understood what and how the project works.
@@ -95,28 +96,39 @@ User Stories:
 * As a user I can view model performance so that its known of how the model works and it's accuracy.
 
 ## ML Business Case
-* We want ML model to predict sale price of a house and be able to visualize the data on a user friendly dashboard.
-* Our ideal outcome is for the machine learning model to be able to predict house prices and clieants inherited property value as accurate as possible
+* We want ML model to predict sale price of a house and be able to visualise the data on a user friendly dashboard.
+* Our ideal outcome is for the machine learning model to be able to predict house prices and the client's inherited property value as accurately as possible
 * The model succsess metrics are:
   * At least a 0.7 R2 score on train and test set
-* The model output is 0.8 on the R2 score that gives us a predictive value in dollaras of a house in Ames, Iowa.
+* The model output is 0.8 on the R2 score that gives us a predictive value in dollars of a house in Ames, Iowa.
 * The training data was collected from public dataset on kaggle, it consists of nearly 1500 house records and their features.
 
 
 ## Dashboard Design
 ### Project Summary page
 * Summarises project and tells about projects dataset. It includes projects Terms & Jargon and lists business requirements.
+![summary](https://github.com/meija1/heritage-housing-issues/assets/109754892/45752138-4e09-41a1-b366-01442fb4ba87)
+
 ### Project Hypothesis
 * Gives projects hypothesis and validation
-### Predict House Price
-* Includes Predict House Price Interface with 4 variables as input feature to predict any house price in Ames, Iowa
-### Predict Inherited House Price
-* Includes visible data of clients 4 inheted houses with the most important features for prediction. Underneath is a button to run the inherited house prediction.
-### House Price Study
-* Displays house price dataset in the first checkbox and variables that is most correlated with the sale price. Two checkboxes displaying spearman and pearson calculations on data correlation and short description. Sale price analysis checkbox shows correlation on these most correlated variables.
-### Machine Learning Model
-* Short description of the model and visualizing pipeline. Displayig 4 features the model was trained on and it's bar plot. Showing pipeline performance on train and test set incliding mean squared error, mean absolute error and r2 score
+![hypothesis](https://github.com/meija1/heritage-housing-issues/assets/109754892/3f2796ed-fc96-46f1-a94c-37818f32f4c6)
 
+### Predict House Price
+* Includes Predict House Price Interface with four variables as input features to predict any house price in Ames, Iowa
+![predicthouseprice](https://github.com/meija1/heritage-housing-issues/assets/109754892/43c8b870-9808-49b1-a7f6-d7fa6e3c0108)
+
+### Predict Inherited House Price
+* Includes visible data of the client's four inherited houses with the most important features for prediction. Underneath is a button to run the inherited house prediction.
+![inheritedprediction](https://github.com/meija1/heritage-housing-issues/assets/109754892/2bf73b98-2b3b-4d0b-8974-dbe6100a2a84)
+
+### House Price Study
+* Displays house price dataset in the first checkbox and variables that are most correlated with the sale price. Two checkboxes displaying spearman and pearson calculations on data correlation and short description. Sale price analysis checkbox shows correlation on these most correlated variables.
+![housepricestudy](https://github.com/meija1/heritage-housing-issues/assets/109754892/b2763834-b008-46de-b0cd-0a8e95b4c35a)
+
+### Machine Learning Model
+* Short description of the model and visualising pipeline. Displaying the four features the model was trained on and its bar plot. Showing pipeline performance on train and test set including mean squared error, mean absolute error and r2 score.
+![model](https://github.com/meija1/heritage-housing-issues/assets/109754892/66513674-5b7d-4de6-8307-d307c16fdddf)
+![model1](https://github.com/meija1/heritage-housing-issues/assets/109754892/d71bd294-0024-43b9-915f-eff2f360677f)
 
 ## Unfixed Bugs
 No bugs recorded to my knowledge
@@ -151,7 +163,7 @@ No bugs recorded to my knowledge
 ## Credits 
 ### Content 
 - The project was heavily helped by Walkthrough Project 2-Churnometer by Code Institute, with their custom functions and features for the model and dashboard. [Churnometer](https://github.com/Code-Institute-Solutions/churnometer)
-- A lot of common errors was fixed with the help of [Slack](https://app.slack.com/)
+- A lot of common errors were fixed with the help of [Slack](https://app.slack.com/)
 - Most errors and bugs were fixed by finding similar problems on [StackOverflow](https://stackoverflow.com/)
 
 ### Media
