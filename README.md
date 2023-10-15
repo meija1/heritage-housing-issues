@@ -85,13 +85,22 @@ Business requirement 2:
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
-
+### Project Summary page
+* Summarises project and tells about projects dataset. It includes projects Terms & Jargon and lists business requirements.
+### Project Hypothesis
+* Gives projects hypothesis and validation
+### Predict House Price
+* Includes Predict House Price Interface with 4 variables as input feature to predict any house price in Ames, Iowa
+### Predict Inherited House Price
+* Includes visible data of clients 4 inheted houses with the most important features for prediction. Underneath is a button to run the inherited house prediction.
+### House Price Study
+* Displays house price dataset in the first checkbox and variables that is most correlated with the sale price. Two checkboxes displaying spearman and pearson calculations on data correlation and short description. Sale price analysis checkbox shows correlation on these most correlated variables.
+### Machine Learning Model
+* Short description of the model and visualizing pipeline. Displayig 4 features the model was trained on and it's bar plot. Showing pipeline performance on train and test set incliding mean squared error, mean absolute error and r2 score
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+No bugs recorded to my knowledge
 
 ## Deployment
 ### Heroku
@@ -108,14 +117,19 @@ Business requirement 2:
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
-
+Codeanywhere - Used as development environment
+GitHub - For hosting the project
+Heroku - Deployment and hosting the app
+Jupyter Notebooks - Main software for data analysis and machine learning models using python
+Python - Was the main programming language used.
+Kaggle - Where the data for house prices was taken from
+Streamlit - Used to create dashboard interface for the client
+Pandas library - To read and inspect the data
+Feature Engine - Used for transformers and engineer data: Missing data imputation, Categorical encoding, Variable transformation
+scikit learn - Used for machine learning library like regression, classification, clustering, and statistical tools
+matplotlib - To display and visulize data in heatmaps and histograms
 
 ## Credits 
-
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A
@@ -123,12 +137,11 @@ Business requirement 2:
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
+No media used in this project
 
 
 ## Acknowledgements
-* In case you would like to thank the people that provided support through this project.
+* Thanks to slack community for quick and helpfull responses
+* This project would not be possible without Walkthrough Project 2-Churnometer guidence
+* A big thanks to Code Institutes tutors and mentors for their support and help with the project
 
