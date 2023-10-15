@@ -117,17 +117,17 @@ No bugs recorded to my knowledge
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-Codeanywhere - Used as development environment
-GitHub - For hosting the project
-Heroku - Deployment and hosting the app
-Jupyter Notebooks - Main software for data analysis and machine learning models using python
-Python - Was the main programming language used.
-Kaggle - Where the data for house prices was taken from
-Streamlit - Used to create dashboard interface for the client
-Pandas library - To read and inspect the data
-Feature Engine - Used for transformers and engineer data: Missing data imputation, Categorical encoding, Variable transformation
-scikit learn - Used for machine learning library like regression, classification, clustering, and statistical tools
-matplotlib - To display and visulize data in heatmaps and histograms
+* Codeanywhere - Used as development environment
+* GitHub - For hosting the project
+* Heroku - Deployment and hosting the app
+* Jupyter Notebooks - Main software for data analysis and machine learning models using python
+* Python - Was the main programming language used.
+* Kaggle - Where the data for house prices was taken from
+* Streamlit - Used to create dashboard interface for the client
+* Pandas library - To read and inspect the data
+* Feature Engine - Used for transformers and engineer data: Missing data imputation, Categorical encoding, Variable transformation
+* scikit learn - Used for machine learning library like regression, classification, clustering, and statistical tools
+* matplotlib - To display and visulize data in heatmaps and histograms
 
 ## Credits 
 ### Content 
